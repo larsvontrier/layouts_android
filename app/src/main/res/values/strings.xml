@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Layouts</string>
+    <string name="imagen_descripcion">Imagen descargada de Internet</string>
+    <string-array name="listaNombres">
+        <item>BATTLEGROUNDS</item>
+        <item>Naruto</item>
+        <item>Genshin Impact</item>
+    </string-array>
+    <string-array name="listaJuegos">
+        <item>BATTLEGROUNDS|https://www.freetogame.com/g/516/thumbnail.jpg</item>
+        <item>Naruto|https://www.freetogame.com/g/365/thumbnail.jpg</item>
+        <item>Genshin Impact|https://www.freetogame.com/g/475/thumbnail.jpg</item>
+    </string-array>
+</resources>

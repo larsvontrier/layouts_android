@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/principal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/btListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ListView"
+        app:layout_constraintBottom_toTopOf="@+id/btFrameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btFrameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FrameLayout"
+        app:layout_constraintBottom_toTopOf="@id/btConstraint"
+        app:layout_constraintEnd_toEndOf="@id/btListView"
+        app:layout_constraintStart_toStartOf="@id/btListView"
+        app:layout_constraintTop_toBottomOf="@+id/btListView" />
+
+
+    <Button
+        android:id="@+id/btConstraint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contraints"
+        app:layout_constraintBottom_toTopOf="@id/btAnimaciones"
+        app:layout_constraintEnd_toEndOf="@id/btFrameLayout"
+        app:layout_constraintStart_toStartOf="@id/btFrameLayout"
+        app:layout_constraintTop_toBottomOf="@id/btFrameLayout" />
+
+    <Button
+        android:id="@+id/btAnimaciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animaciones"
+        app:layout_constraintBottom_toTopOf="@id/btRecyclerView"
+        app:layout_constraintEnd_toEndOf="@id/btConstraint"
+        app:layout_constraintStart_toStartOf="@id/btConstraint"
+        app:layout_constraintTop_toBottomOf="@+id/btConstraint" />
+
+    <Button
+        android:id="@+id/btRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RecyclerView"
+        app:layout_constraintBottom_toTopOf="@id/btWebView"
+        app:layout_constraintEnd_toEndOf="@id/btAnimaciones"
+        app:layout_constraintStart_toStartOf="@id/btAnimaciones"
+        app:layout_constraintTop_toBottomOf="@id/btAnimaciones" />
+
+
+    <Button
+        android:id="@+id/btWebView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WebView"
+        app:layout_constraintEnd_toEndOf="@id/btRecyclerView"
+        app:layout_constraintStart_toStartOf="@id/btRecyclerView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btRecyclerView"
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
