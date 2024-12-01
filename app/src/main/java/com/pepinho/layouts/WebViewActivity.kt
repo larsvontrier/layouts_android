@@ -58,7 +58,7 @@ class WebViewActivity : AppCompatActivity() {
             }
         }
         try {
-            wvPagina.loadUrl("https://github.com/") // Ojo, es síncrona!
+            wvPagina.loadUrl("pepinho.com") // Ojo, es síncrona!
         } catch (e: Exception){
             Log.d("Error: ", "{${e.message}")
         }
